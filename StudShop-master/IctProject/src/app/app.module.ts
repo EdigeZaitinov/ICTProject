@@ -11,6 +11,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SearchPipe } from './search.pipe';
+import { UploadComponent } from './upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchPipe } from './search.pipe';
     ProductListComponent,
     ProductComponent,
     ProductDetailsComponent,
-    SearchPipe
+    SearchPipe,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
@@ -28,10 +30,11 @@ import { SearchPipe } from './search.pipe';
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component:BannerHeaderComponent },
+      { path: '', component: BannerHeaderComponent },
       { path: 'productList', component: ProductListComponent},
       { path: 'productList/:productListId/products', component: ProductComponent},
-      { path: 'productList/:productListId/products/:productId', component: ProductDetailsComponent}
+      { path: 'productList/:productListId/products/:productId', component: ProductDetailsComponent},
+      { path: 'upload', component: UploadComponent }
     ])
 
   ],

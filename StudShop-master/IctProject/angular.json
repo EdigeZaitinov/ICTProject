@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ictproject"
+    }
+  },
+  "defaultProject": "ictproject",
+  "cli": {
+    "analytics": false
+  }
 }
